@@ -4,6 +4,7 @@ import notesRoutes from "./routes/notes";
 
 const app = express();
 
+app.use(express.json());
 //get notes
 app.use("/api/notes", notesRoutes)
 
